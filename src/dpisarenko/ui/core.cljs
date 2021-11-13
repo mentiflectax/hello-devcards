@@ -1,4 +1,4 @@
-(ns hello-devcards.core
+(ns dpisarenko.ui.core
   (:require
    #_[om.core :as om :include-macros true]
    [sablono.core :as sab :include-macros true]
@@ -13,14 +13,16 @@
 
 (enable-console-print!)
 
-(defcard entry-point
+
+(defcard entry-point2
   (sab/html [:div
-             [:h1 "Entry Point"]
+             [:h1 "Entry Point 2"]
              [:p (str "Hello, body text"
                       "Name of our novel: "
                       (get my-novel :name)
                        )]
              ]))
+
 
 (defn main []
   ;; conditionally start the app based on whether the #main-app-area
@@ -32,4 +34,3 @@
 
 ;; remember to run lein figwheel and then browse to
 ;; http://localhost:3449/cards.html
-
