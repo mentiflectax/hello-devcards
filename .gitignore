@@ -1,3 +1,5 @@
 target/
 figwheel_server.log
 resources/public/js/compiled
+.idea
+hello-devcards.iml
