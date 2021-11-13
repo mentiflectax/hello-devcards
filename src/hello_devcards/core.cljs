@@ -1,15 +1,22 @@
 (ns hello-devcards.core
   (:require
    #_[om.core :as om :include-macros true]
-   [sablono.core :as sab :include-macros true])
+   [sablono.core :as sab :include-macros true]
+   [dpisarenko.work.entry-point :refer [my-novel]]
+   )
+
+
   (:require-macros
-   [devcards.core :as dc :refer [defcard deftest]]))
+   [devcards.core :as dc :refer [defcard deftest]])
+
+;  (:require [dpisarenko.work.entry-point :refer [my-novel]])
+  )
 
 (enable-console-print!)
 
 (defcard first-card
   (sab/html [:div
-             [:h1 "This is your first devcard!"]]))
+             [:h1 "Привет! This is your first devcard!"]]))
 
 (defn main []
   ;; conditionally start the app based on whether the #main-app-area
