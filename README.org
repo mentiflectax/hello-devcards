@@ -1,0 +1,8 @@
+
+
+How to create this project and then run Figweheel.
+
+#+begin_src bash
+lein new devcards hello-devcards
+lein figwheel
+#+end_src
