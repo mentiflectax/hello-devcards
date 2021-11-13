@@ -15,13 +15,18 @@
 
 
 (defcard entry-point2
-  (sab/html [:div
-             [:h1 "Entry Point 2"]
-             [:p (str "Hello, body text"
+  (sab/html (let [work-name (get my-novel :name)]
+         [:div
+             [:h1 work-name]
+             [:p (str
+                   "Hello, again!"
+                   "Hello, body text"
                       "Name of our novel: "
-                      (get my-novel :name)
+                      work-name
                        )]
-             ]))
+             ]
+
+              ) ))
 
 
 (defn main []
