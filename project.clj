@@ -40,7 +40,7 @@
                                    ;; started and complied your application.
                                    ;; Comment this out once it no longer serves you.
                                    :open-urls ["http://localhost:3449/cards.html"]}
-                        :compiler { :main       "hello-devcards.core"
+                        :compiler { :main       "dpisarenko.ui.core"
                                     :asset-path "js/compiled/devcards_out"
                                     :output-to  "resources/public/js/compiled/hello_devcards_devcards.js"
                                     :output-dir "resources/public/js/compiled/devcards_out"
