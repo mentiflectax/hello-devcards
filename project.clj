@@ -8,6 +8,10 @@
   
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
+                 ;; java.xml.bind (start)
+                 [jakarta.xml.bind/jakarta.xml.bind-api "2.3.2"]
+                 [org.glassfish.jaxb/jaxb-runtime "2.3.2"]
+                 ;; java.xml.bind (end)
                  [devcards "0.2.3"]
                  [sablono "0.7.4"]
                  
@@ -48,7 +52,8 @@
                                    :asset-path "js/compiled/out"
                                    :output-to  "resources/public/js/compiled/hello_devcards.js"
                                    :output-dir "resources/public/js/compiled/out"
-                                   :source-map-timestamp true }}
+                                   :source-map-timestamp true
+                                   }}
                        {:id "prod"
                         :source-paths ["src"]
                         :compiler {:main       "hello-devcards.core"
